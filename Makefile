@@ -1,4 +1,4 @@
-.PHONY = build test
+.PHONY: build test
 
 export HOST ?= $(shell hostname)
 export HOSTNAME ?= $(HOST)
