@@ -1,0 +1,3 @@
+[submodule "vendor/guile"]
+	path = vendor/guile
+	url = https://git.sv.gnu.org/git/guile.git
