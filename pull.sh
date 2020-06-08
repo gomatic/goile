@@ -3,7 +3,7 @@ export GOPATH=${PWD}
 [ -d src ] || mkdir src
 cd src
 [ -d src/goile ] || {
-  git clone https://github.com/nicerobot/goile.git
+  git clone https://github.com/gomatic/goile.git
 }
 cd goile
 make

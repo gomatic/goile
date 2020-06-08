@@ -1,3 +1,4 @@
+// +build darwin
 package main
 
 import (
@@ -6,7 +7,8 @@ import (
 )
 
 /*
-#cgo pkg-config: guile-2.0
+#cgo CFLAGS: -I${SRCDIR}/vendor/guile -I${SRCDIR}/vendor/guile/libguile
+#cgo LDFLAGS: -L${SRCDIR}/vendor/guile/libguile/.libs -lguile-3.0
 #include <stdlib.h>
 extern int boot_guile(int, char*[]);
 */
